@@ -12,10 +12,19 @@ router.get('/:id', (req, res) => {
   
 })
 // create one
+router.post('/', (req, res) => {
+
+})
 
 // update one
+router.put('/', (req, res) => {
+
+})
 
 // delete one
+router.delete('/:id', (req, res) => {
+
+})
 
 
 module.exports = router
