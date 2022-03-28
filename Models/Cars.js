@@ -11,7 +11,7 @@ const CarSchema = new mongoose.Schema({
   },
   dateAdded: {
     type: Date,
-    required: true,
+    required: false,
     default: Date.now
   }
 })
