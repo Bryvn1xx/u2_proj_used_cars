@@ -1,0 +1,27 @@
+{
+  "name": "u2_used_cars_proj",
+  "version": "1.0.0",
+  "description": "### By: Bryan Sanchez",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryvn1xx/u2_proj_used_cars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryvn1xx/u2_proj_used_cars/issues"
+  },
+  "homepage": "https://github.com/Bryvn1xx/u2_proj_used_cars#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
