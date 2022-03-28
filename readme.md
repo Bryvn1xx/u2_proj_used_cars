@@ -19,7 +19,7 @@
 
 ### ERD
 
-## ![img](usedcars_img/used_Cars_erd.png)
+## ![img](usedcars_img/used_cars_erd.png)
 
 ### Component Hierarchy Diagram
 
