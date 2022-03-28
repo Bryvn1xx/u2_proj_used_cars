@@ -11,8 +11,8 @@ db.once('open', () => console.log('Connected to Database'))
 
 app.use(express.json())
 
-const usedCarsRouter = require('./routes/UsedCars')
+const usedCarsRouter = require('./Routes/UsedCars')
 app.use('/UsedCars', usedCarsRouter)
 
 
-app.listen(3000, () => console.log('Server Starter'))
+app.listen(3000, () => console.log('Server Started'))
