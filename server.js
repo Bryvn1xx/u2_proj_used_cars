@@ -1,24 +1,88 @@
-require('dotenv').config()
-
 const express = require('express')
-// const cors = require('cors')
-const app = express()
-const mongoose = require('mongoose')
+
+const cors = require('cors')
+const logger = require('morgan')
 const PORT = process.env.PORT || 3001
 
-app.listen(PORT, () => {
-  console.log(`App listening on port: ${PORT}`)
-})
+const db = require('./db')
+const { Car } = require('./Models')
+const { get } = require('./Models/Cars')
 
 
-mongoose.connect(process.env.DATABASE_URL)
-const db = mongoose.connection
-db.on('error', (error) => console.error(error))
-db.once('open', () => console.log('Connected to Database'))
+const app = express()
 
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
+app.use(logger('dev'))
 
-const usedCarsRouter = require('./Controllers/UsedCars')
-app.use('/UsedCars', usedCarsRouter)
+
+//get all
+app.get('/cars', async (req, res) => {
+  const cars = await Car.find()
+  res.json(cars)
+})
+//getOne
+app.get('/cars/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const car = await Car.findById(id)
+    if (!car) throw Error('Car not found')
+    res.json(car)
+
+  } catch (e) {
+    console.log(e)
+    res.send('Car not found')
+  }
+})
+//createOne
+app.post('/cars', async (req, res) => {
+  try {
+    const car = await new Car(req.body)
+    await car.save()
+    return res.status(201).json({
+      car
+    })
+  } catch (err) {
+    return res.status(500).json({ error: err.message })
+  }
+})
+//deleteOne
+  app.delete('/cars/:id', async (req, res) => {
+    try {
+      const { id } = req.params
+      const deleted = await Car.findByIdAndDelete(id)
+      if (deleted) {
+        return res.status(200).send('Car deleted')
+      }
+      
+      throw new Error('Car not found')
+    }  catch (err) {
+      return res.status(500).send(err.message)
+  }
+  })
+// updateOne
+// app.put('/:id', async (req, res) => {
+//   if (req.body.make != null) {
+//     res.car.make = req.body
+//   }
+//   if (req.body.model != null) {
+//     res.car.model = req.body.model
+//   }
+//   try {
+//     const updatedCar = await res.car.save()
+//     res.json(updatedCar)
+//   } catch (err) {
+//     res.status(400).json({ message: err.message })
+//   }
+// })
+
+
+
+
+
+
+
+app.listen(PORT, () => {
+  console.log(`Express server listening on port ${PORT}`)
+})
 

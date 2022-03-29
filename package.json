@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Bryvn1xx/u2_proj_used_cars#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "mongoose": "^6.2.8"
+    "mongoose": "^6.2.8",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
