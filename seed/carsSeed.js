@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Car, CarLot } = require('../Models')
+const { Car } = require('../Models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -7,7 +7,8 @@ const main = async () => {
   const car1 = await new Car({
     make: 'Chevrolet',
     model: 'Tahoe',
-    year: 2020
+    year: 2020,
+    img: 'https://glendorachevrolet.com/wp-content/uploads/2019/03/2019-Chevy-Tahoe.jpg'
 
   })
   car1.save()
@@ -48,6 +49,7 @@ const main = async () => {
 
 }
 const run = async () => {
+  await db.dropDatabase()
   await main()
   // db.close()
 }

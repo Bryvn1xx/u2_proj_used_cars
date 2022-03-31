@@ -2,11 +2,11 @@ const express = require('express')
 
 const cors = require('cors')
 const logger = require('morgan')
+const { Car } = require('./Models')
 const PORT = process.env.PORT || 3001
 
 const db = require('./db')
-const { Car } = require('./Models')
-const { get } = require('./Models/Cars')
+
 
 
 const app = express()
@@ -21,6 +21,13 @@ app.get('/cars', async (req, res) => {
   const cars = await Car.find()
   res.json(cars)
 })
+//getall eco
+app.get('/economy', async (req, res) => {
+  const cars = await Car.find()
+  res.json(cars)
+})
+
+
 //getOne
 app.get('/cars/:id', async (req, res) => {
   try {
@@ -46,20 +53,47 @@ app.post('/cars', async (req, res) => {
     return res.status(500).json({ error: err.message })
   }
 })
-//deleteOne
-  app.delete('/cars/:id', async (req, res) => {
-    try {
-      const { id } = req.params
-      const deleted = await Car.findByIdAndDelete(id)
-      if (deleted) {
-        return res.status(200).send('Car deleted')
-      }
-      
-      throw new Error('Car not found')
-    }  catch (err) {
-      return res.status(500).send(err.message)
+//create eco
+app.post('/economy', async (req, res) => {
+  try {
+    const car = await new Car(req.body)
+    await car.save()
+    return res.status(201).json({
+      car
+    })
+  } catch (err) {
+    return res.status(500).json({ error: err.message })
   }
-  })
+})
+
+//deleteOne
+app.delete('/cars/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Car.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Car deleted')
+    }
+
+    throw new Error('Car not found')
+  } catch (err) {
+    return res.status(500).send(err.message)
+  }
+})
+//delete eco
+app.delete('/economy/:id', async (req, res) => {
+  try {
+    const { id } = req.params
+    const deleted = await Car.findByIdAndDelete(id)
+    if (deleted) {
+      return res.status(200).send('Car deleted')
+    }
+
+    throw new Error('Car not found')
+  } catch (err) {
+    return res.status(500).send(err.message)
+  }
+})
 // updateOne
 // app.put('/:id', async (req, res) => {
 //   if (req.body.make != null) {
