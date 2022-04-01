@@ -42,7 +42,6 @@ const main = async () => {
   car5.save()
 
 
-  // await Car.insertMany(cars)
   console.log('Created cars!')
 
 
