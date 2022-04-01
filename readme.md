@@ -29,8 +29,13 @@
 
 ## ![img](usedcars_img/final_product.png)
 
+# ![img](usedcars_img/screenshot.png)
+
 Future Update:
+
+### In future updates i plan on adding a search functionality & some effects
 
 ---
 
 Credits:
+### https://github.com/SEI-R-2-22/class_wiki
