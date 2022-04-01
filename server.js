@@ -1,4 +1,6 @@
+// import { Car } from './Models/Cars'
 const express = require('express')
+
 
 const cors = require('cors')
 const logger = require('morgan')
@@ -109,7 +111,16 @@ app.delete('/economy/:id', async (req, res) => {
 //     res.status(400).json({ message: err.message })
 //   }
 // })
-
+app.put('/:id', async (req, res) => {
+  try {
+    const updatedCar = await Car.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.json(updatedCar)
+  } catch (err) {
+    res.send(err.message)
+  }
+})
 
 
 
