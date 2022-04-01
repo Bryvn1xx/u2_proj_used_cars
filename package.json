@@ -4,7 +4,8 @@
   "description": "### By: Bryan Sanchez",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "cd client && rm -rf build && npm install && npm run build"
   },
   "repository": {
     "type": "git",
