@@ -111,9 +111,9 @@ app.delete('/economy/:id', async (req, res) => {
 //     res.status(400).json({ message: err.message })
 //   }
 // })
-app.put('/:id', async (req, res) => {
+app.put('/cars/:carId', async (req, res) => {
   try {
-    const updatedCar = await Car.findByIdAndUpdate(req.params.id, req.body, {
+    const updatedCar = await Car.findByIdAndUpdate(req.params.carId, req.body, {
       new: true
     })
     res.json(updatedCar)
