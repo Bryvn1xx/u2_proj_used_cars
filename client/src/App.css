@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/z/parked-toy-cars-black-background-like-car-parking-lot-top-view-168401852.jpg')
+}
+.title {
+  font-size: 65px;
+}
+  body {
+  max-width: 100%;
+  background-color: #a2a2b4;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: 10%;
+  background-repeat: no-repeat;
+  /* overflow-x: hidden; */
+ 
+
+
+}
+.about {
+  color: white;
+}
+
+.updateForm {
+  font-size: 35px;
+}
+.cardDes {
+  color: white;
+  font-size: 30px;
+  border-style: solid;
+  border-radius: 35px;
+}
+.navHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* color: red; */
+
+  height: 50px;
+}
+.headerr {
+  border-style: solid;
+  border-color: grey;
+  color: white;
+  flex-direction: column-reverse;
+  background-color: gray;
+  
+}
+.headerCover {
+  color: white;
+}
+.title {
+  color: white;
+}
+.routesHead {
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  /* color: white; */
+}
+.carcard-img {
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+.updateBtn {
+  border-radius: 35px;
+}
+.deleteBtn {
+  border-radius: 35px;
+  background-color: grey;
+}
+  
+
+.carlot-box {
+  display: flex;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  /* background-color: rgb(162, 162, 180); */
+  }
+  
+
+.car-img {
+  display: block;
+  padding: 15px;
+  
+}
+
+.details-summary {
+color: white;
+font-size: 35px;
+border-style: solid;
+border-color: white;
+/* background-color: rgb(162, 162, 180); */
+border-radius: 35px;
+background-image: url('https://i.pinimg.com/originals/73/1d/10/731d10fbac07ec4e9807298c435b9725.jpg')
+
+}
+
+.Wrapper {
+  color: blue;
+}
+.carlot-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: red;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 25px 0;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
