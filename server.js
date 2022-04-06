@@ -109,13 +109,7 @@ app.delete('/economy/:id', async (req, res) => {
 //   if (req.body.model != null) {
 //     res.car.model = req.body.model
 //   }
-//   try {
-//     const updatedCar = await res.car.save()
-//     res.json(updatedCar)
-//   } catch (err) {
-//     res.status(400).json({ message: err.message })
-//   }
-// })
+
 app.put('/cars/:carId', async (req, res) => {
   try {
     const updatedCar = await Car.findByIdAndUpdate(req.params.carId, req.body, {
