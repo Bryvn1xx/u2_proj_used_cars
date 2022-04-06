@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Car } = require('../Models')
+const { Car, CarLot } = require('../Models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -41,6 +41,13 @@ const main = async () => {
   })
   car5.save()
 
+  const carLot = await new CarLot({
+    name: 'Luxury Motors',
+    location: 'Rancho Cucamonga, CA'
+
+  })
+  carLot.save()
+
 
   console.log('Created cars!')
 
@@ -48,7 +55,7 @@ const main = async () => {
 
 }
 const run = async () => {
-  await db.dropDatabase()
+  // await db.dropDatabase()
   await main()
   // db.close()
 }

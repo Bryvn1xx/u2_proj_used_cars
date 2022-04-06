@@ -4,7 +4,7 @@ const express = require('express')
 
 const cors = require('cors')
 const logger = require('morgan')
-const { Car } = require('./Models')
+const { Car, CarLot } = require('./Models')
 const PORT = process.env.PORT || 3001
 
 const db = require('./db')
@@ -22,6 +22,11 @@ app.use(logger('dev'))
 app.get('/cars', async (req, res) => {
   const cars = await Car.find()
   res.json(cars)
+})
+//get all lots
+app.get('/carlots', async (req, res) => {
+  const carLot = await CarLot.find()
+  res.json(carLot)
 })
 //getall eco
 app.get('/economy', async (req, res) => {
