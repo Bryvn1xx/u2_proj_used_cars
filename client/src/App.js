@@ -2,7 +2,6 @@
 import { Route, Routes } from 'react-router-dom'
 import React from 'react'
 import './App.css'
-// import axios from 'axios'
 import Home from './pages/Home'
 import About from './pages/About'
 import Economy from './pages/Economy'
