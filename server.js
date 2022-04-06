@@ -101,14 +101,6 @@ app.delete('/economy/:id', async (req, res) => {
     return res.status(500).send(err.message)
   }
 })
-// updateOne
-// app.put('/:id', async (req, res) => {
-//   if (req.body.make != null) {
-//     res.car.make = req.body
-//   }
-//   if (req.body.model != null) {
-//     res.car.model = req.body.model
-//   }
 
 app.put('/cars/:carId', async (req, res) => {
   try {
