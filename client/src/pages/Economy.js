@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-// import AllCarsCard from '../components/AllCarsCard'
 import CarCard from '../components/CarCard'
 import { Link } from 'react-router-dom'
 
