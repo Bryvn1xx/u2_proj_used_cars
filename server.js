@@ -9,8 +9,6 @@ const PORT = process.env.PORT || 3001
 
 const db = require('./db')
 
-
-
 const app = express()
 app.use(express.static(`${__dirname}/client/build`))
 app.use(cors())
@@ -103,6 +101,7 @@ app.delete('/economy/:id', async (req, res) => {
 })
 
 app.put('/cars/:carId', async (req, res) => {
+
   try {
     const updatedCar = await Car.findByIdAndUpdate(req.params.carId, req.body, {
       new: true

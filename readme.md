@@ -11,9 +11,16 @@
 
 ## ![img](https://di-uploads-pod20.dealerinspire.com/douglasjeepchryslerdodgeram/uploads/2019/03/DOUG_Storefront.jpg)
 
+# Getting Started
+### npm i
+### npm i react-router-dom
+### node seed/carsSeed.js
+
+
+
 ## Description:
 
-#### In this project i will create a webpage to display the used cars at my lot. I will create this using React & MongoDB, i will have te ability to view, update, add, and delete cars on my page depending on my inventory.
+#### In this project i will create a webpage to display the used cars at my lot. I will create this using React & MongoDB, i will have te ability to view, update, add, and delete cars on my page depending on my inventory. This webpage will inspire those who are stuck on what new car they would like to buy. Also it is a list of cars i personally love!
 
 ---
 
@@ -33,9 +40,14 @@
 
 Future Update:
 
-### In future updates i plan on adding a search functionality & some effects
+### - add search functionality
+
+### - add filtering through cars
+
+### - add links to kbb for cars
 
 ---
 
 Credits:
+
 ### https://github.com/SEI-R-2-22/class_wiki
