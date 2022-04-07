@@ -21,7 +21,7 @@ const UpdateCar = (props) => {
     console.log(res, 'res  ')
 
   }
-
+  //updateForm
   return (
     <div className='updateForm'>
       <form onSubmit={((e) => getUpdate)}>
