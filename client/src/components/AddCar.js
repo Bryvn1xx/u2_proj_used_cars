@@ -34,7 +34,7 @@ const CreateCar = (props) => {
           type='text'
           name='car'
           value={addCar.make}
-          placeholder='make'
+          placeholder='Make'
           onChange={(e) => setAddCar({ ...addCar, make: e.target.value })}
         ></input>
 
@@ -42,7 +42,7 @@ const CreateCar = (props) => {
           type='text'
           name='model'
           value={addCar.model}
-          placeholder='model'
+          placeholder='Model'
           required
           onChange={(e) =>
             setAddCar({ ...addCar, model: e.target.value })
@@ -52,7 +52,7 @@ const CreateCar = (props) => {
           type='number'
           name='year'
           value={addCar.year}
-          placeholder='year'
+          placeholder='Year'
           required
           onChange={(e) =>
             setAddCar({ ...addCar, year: e.target.value })

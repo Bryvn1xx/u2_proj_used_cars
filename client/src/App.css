@@ -24,6 +24,10 @@
 .addCar {
   color: red;
 }
+.addCarForm {
+  border-radius: 50px;
+
+}
 .about {
   color: white;
 }
