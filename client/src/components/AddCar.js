@@ -26,7 +26,7 @@ const CreateCar = (props) => {
   return (
     <div className='addCar'>
       <h1>Add Car</h1>
-      <form onSubmit={handleSubmit}>
+      <form className='addCarForm' onSubmit={handleSubmit}>
 
 
 
