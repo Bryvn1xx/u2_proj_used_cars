@@ -5,10 +5,11 @@ import React from 'react'
 const About = () => {
   return (
     <div className='about'>
-      <h1>About Us</h1>
+      <h1>About Us!</h1>
       <p>
         Welcome to our online dealership, this is where you can browse
-        through out selection of new and used cars that fit into your budget!
+        through our selection of new and used cars that fit into your budget! checkout
+        what we have in stock & contact us for more information! :)
 
       </p>
       <div>

@@ -3,7 +3,6 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const CreateCar = (props) => {
-  // const [updateCar, setUpdateCar] = ([])
   const [addCar, setAddCar] = useState({
 
     make: '',
