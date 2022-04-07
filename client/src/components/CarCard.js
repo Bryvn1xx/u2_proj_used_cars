@@ -12,7 +12,7 @@ const CarCard = (props) => {
   }
   return (
     <div className="details-summary" >
-      <div className="car-img">
+      <div className="carCard">
         <Link
           className="viewPage" to={`/cars/${props._id}`} >
 
