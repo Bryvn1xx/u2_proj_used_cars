@@ -113,8 +113,9 @@ border-style: solid;
 border-color: white;
 /* background-color: rgb(162, 162, 180); */
 border-radius: 35px;
-background-image: url('https://i.pinimg.com/originals/73/1d/10/731d10fbac07ec4e9807298c435b9725.jpg')
-
+background-image: url('https://i.pinimg.com/originals/73/1d/10/731d10fbac07ec4e9807298c435b9725.jpg');
+margin: auto;
+padding: 80px;
 }
 
 .Wrapper {
