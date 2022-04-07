@@ -56,4 +56,5 @@ Future Update:
 
 Credits:
 
-### https://github.com/SEI-R-2-22/class_wiki
+[Class_Wiki](https://github.com/SEI-R-2-22/class_wiki)
+[FlexboxFroggy](https://flexboxfroggy.com/)
