@@ -29,6 +29,9 @@
   border-bottom: 2px solid black;
   font-size: 20px;
 }
+a:visited {
+  color: black;
+}
 .addCar {
   color: red;
 }
@@ -64,6 +67,10 @@
   flex-direction: column-reverse;
   background-color: gray;
   
+}
+.carView {
+  color: white;
+  font-size: 30px;
 }
 .headerCover {
   color: white;

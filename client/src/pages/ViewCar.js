@@ -26,7 +26,7 @@ const ViewCar = (props) => {
         <div className="cardImg">
           <img className='carcard-img' src={carDetails.img} alt="404 err"></img>
         </div>
-        <div className="cardDes">
+        <div className="carView">
           <h1>Make: {carDetails.make}</h1>
           <div>
             <p>Model: {carDetails.model}</p>
