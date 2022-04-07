@@ -24,7 +24,7 @@
 
 ## Technology Used:
 ### React
-### mongoDB
+### MongoDB
 ### Express
 ### CSS
 
