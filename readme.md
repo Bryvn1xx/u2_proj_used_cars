@@ -22,6 +22,9 @@
 
 #### In this project i will create a webpage to display the used cars at my lot. I will create this using React & MongoDB, i will have te ability to view, update, add, and delete cars on my page depending on my inventory. This webpage will inspire those who are stuck on what new car they would like to buy. Also it is a list of cars i personally love!
 
+## Technology Used:
+
+
 ---
 
 ### ERD
