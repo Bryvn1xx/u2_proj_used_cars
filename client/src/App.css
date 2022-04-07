@@ -4,16 +4,17 @@
 }
 .App {
   text-align: center;
-  background-image: url('https://thumbs.dreamstime.com/z/parked-toy-cars-black-background-like-car-parking-lot-top-view-168401852.jpg')
+  background-image: url('https://thumbs.dreamstime.com/z/parked-toy-cars-black-background-like-car-parking-lot-top-view-168401852.jpg');
+  
 }
 .title {
-  font-size: 65px;
+  font-size: 85px;
 }
   body {
   max-width: 100%;
   background-color: #a2a2b4;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 10px;
   background-size: cover;
   background-position: 10%;
   background-repeat: no-repeat;
